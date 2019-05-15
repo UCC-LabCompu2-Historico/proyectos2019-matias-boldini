@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px 30px;
+        }
+    </style>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title> Calculadora de Superficies</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <script src="main.js"></script>
+</head>
+<body background="imagenes/depositphotos_227620074-stock-illustration-abstract-geometric-white-gray-color.jpg">
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo center">Inicio</a>
+        </div>
+    </nav>
+    <section>
+    <div class="container">
+        <h1 class="header center orange-text">Triangulo</h1>
+    </div>
+    <div>
+        <h5 class="header center black-text">Formula: Base.Altura/2</h5>
+    </div>
+    <div class="row center">
+        <a href="ttriangulo.html" class="waves-effect waves-teal btn-flat"> Teoria en Profundidad</a>
+    </div>
+    </section>
+    <section>
+            <div class="row center">
+                <div class="input-field inline">
+                    <input id="Valor_1" type="number" class="validate">
+                    <label for="Valor_1">Base</label>
+                    Unidad en Metros
+                </div>
+                <div class="input-field inline">
+                    <input id="Valor_2" type="number" class="validate">
+                    <label for="Valor_2">Altura</label>
+                    Unidad en Metros
+                </div>
+                </div>         
+    </section>
+    <section>
+        <div class="row center">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+        <div>
+            <h5 class="header center black-text">Superficie del Triangulo</h5>
+        </div>
+        <div class="row center">
+            Resultado=
+        <div id="STriangulo" class="input-field inline">
+            <input id="STriangulo" class="validate"> Metros Cuadrados
+        </div>
+        </div>
+    </section>
+</body>
+</html>
