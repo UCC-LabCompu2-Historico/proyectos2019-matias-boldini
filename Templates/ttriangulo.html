@@ -3,12 +3,61 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px 30px;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            text-align: center;
+            left: 30%;
+        }
+    </style>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title> Calculadora de Superficies</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <script src="main.js"></script>
 </head>
-<body>
-    
+<body background="imagenes/depositphotos_227620074-stock-illustration-abstract-geometric-white-gray-color.jpg">
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo center">Inicio</a>
+        </div>
+    </nav>
+    <section>
+        <div class="row center">
+        <div class="container">
+            <h1 class="header center orange-text">Teoria de los triangulos</h1>
+        </div>
+        <div class="card center">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="imagenes/triangulo.jpg" style="width: 35%; height: 35%;">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">El triángulo es un polígono de tres lados y tres ángulos.<i class="material-icons right">more_vert</i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Definicion<i class="material-icons right">close</i></span>
+              <p>Se llama triángulo o trígono, en geometría plana, al polígono de tres lados.
+                 Los puntos comunes a cada par de lados se denominan vértices del triángulo.</p>
+            </div>
+          </div>
+        </div>
+    </section>
 </body>
 </html>
