@@ -32,3 +32,18 @@ main {
 footer{
     background-color: orange;
 }
+body{
+    background-image: url(imagenes/depositphotos_227620074-stock-illustration-abstract-geometric-white-gray-color.jpg)
+}
+#titSup{
+    color: black;
+    text-align: center;
+}
+#titFooter{
+    color: white;
+    text-align: center;
+}
+h6{
+    color: black;
+    text-align: center;
+}

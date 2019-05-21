@@ -16,7 +16,7 @@
 
     <script src="main.js"></script>
 </head>
-<body background="imagenes/depositphotos_227620074-stock-illustration-abstract-geometric-white-gray-color.jpg">
+<body>
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="index.html" class="brand-logo center"><i class="material-icons">home</i>Inicio</a>
@@ -54,13 +54,18 @@
             </button>
         </div>
         <div>
-            <h5 class="header center black-text">Superficie del Rectangulo</h5>
+            <h5 id="titSup">Superficie del Rectangulo</h5>
         </div>
         <div class="row center">
             Resultado=
         <div id="SRectangulo" class="input-field inline">
             <input id="SRectangulo" class="validate"> Metros Cuadrados
         </div>
+        <div>
+            <h6>Grafico del Triangulo</h6>
+        </div>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        </canvas>
         </div>
     </section>
     <footer class="page-footer orange">
@@ -71,7 +76,7 @@
               <p><a class="white-text" href="https://github.com/MatiasBoldini">MatÍas Boldini</a></p>
             </div>
             <div class="col l3 s12">
-              <h5 class="white-text">Profesores</h5>
+              <h5 id="titFooter">Profesores</h5>
               <ul>
                 <li><a class="white-text" href="https://github.com/edme88">Agustina Edmé Aliciardi</a></li>
                 <li><a class="white-text" href="https://github.com/rmarku">Martín Ricardo Marcucci</a></li>
