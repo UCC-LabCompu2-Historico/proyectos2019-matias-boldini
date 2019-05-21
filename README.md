@@ -1,7 +1,6 @@
 # proyectos2019-matias-boldini
 proyectos2019-matias-boldini created by GitHub Classroom
 
-# Calculadora de Superficies
 # Calculadora de Superficies-Volumenes
 
 Esta aplicacion en web consiste en brindar una solucion rapida para realizar calculos rapidos de
