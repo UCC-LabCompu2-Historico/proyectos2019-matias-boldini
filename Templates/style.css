@@ -47,3 +47,9 @@ h6{
     color: black;
     text-align: center;
 }
+canvas{
+    border:1px solid #000000; 
+    border-radius: 6px;
+    width: 200;
+    height: 100;
+}
