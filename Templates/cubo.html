@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="imagenes/iconpage.png">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title> Calculadora de SupVol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+</head>
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="volumenes.html" class="brand-logo left"><i class="material-icons">arrow_back</i></a>
+            <a id="logo-container" href="index.html" class="brand-logo center"><i class="material-icons">home</i>Inicio</a>
+        </div>
+    </nav>
+    <section>
+    <header>
+            <h1 id="mainTitulo">CUBO</h1>
+        </header>
+    <div>
+        <h5 class="header center black-text">Formula: Arista³</h5>
+    </div>
+    <div class="row center">
+        <a href="tcubo.html" class="waves-effect waves-teal btn-flat"> Teoria en Profundidad</a>
+    </div>
+    </section>
+    <section>
+        <div class="row center">
+            <div class="input-field inline">
+                <input id="Valor_ACubo" type="number" class="validate">
+                <label>Arista</label>
+                Unidad en Metros
+            </div>
+        </div>    
+    </section>
+    <section>
+        <div class="row center">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+        <div>
+            <h5 id="titSup">Volumen del Cubo</h5>
+        </div>
+        <div class="row center">
+            Resultado=
+        <div id="SCubo" class="input-field inline">
+            <input id="SCuboInput" class="validate"> Metros Cubicos
+        </div>
+        <div>
+            <h6>Grafico del Cubo</h6>
+        </div>
+        <canvas id="myCanvas">
+        </canvas>
+        </div>
+    </section>
+    <footer class="page-footer orange">
+            <div id="divGen" class="container">
+            <div id="divGen" class="row">
+                <div id="divGen" class="col l6 s12">
+                <p class="grey-text text-lighten-4">Proyecto de Laboratorio de Computacion II de Matias Boldini</p>
+                <p><a class="white-text" href="https://github.com/MatiasBoldini">MatÍas Boldini</a></p>
+                </div>
+                <div id="divGen" class="col l3 s12">
+                <h5 id="titFooter">Profesores</h5>
+                <ul>
+                    <li><a class="white-text" href="https://github.com/edme88">Agustina Edmé Aliciardi</a></li>
+                    <li><a class="white-text" href="https://github.com/rmarku">Martín Ricardo Marcucci</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+    </footer>
+</body>
+</html>
