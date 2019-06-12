@@ -20,3 +20,10 @@ function supCuad(){
     var superficie = Lado*Lado;
     superCuad.value = superficie;
 }
+
+function supCirc(){
+    var superCirc = document.getElementById("SCirculoInput");
+    var radio = parseInt(document.getElementById("Valor_RCirculo").value);
+    var superficie = (radio*radio)*Math.PI;
+    superCirc.value = superficie;
+}
