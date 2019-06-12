@@ -42,3 +42,10 @@ function volCubo(){
     var volumen = (arista*arista*arista);
     volCubo.value = volumen;
 }
+
+function volEsf(){
+    var volEsf = document.getElementById("SEsferaInput");
+    var radio = parseInt(document.getElementById("Valor_REsfera").value);
+    var volumen = (4*Math.PI*(radio*radio*radio))/3;
+    volEsf.value = volumen;
+}
