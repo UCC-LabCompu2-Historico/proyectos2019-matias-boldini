@@ -13,3 +13,10 @@ function supTrian(){
     var superficie = (Base * Altura) / 2;
     superTrian.value = superficie;
 }
+
+function supCuad(){
+    var superCuad = document.getElementById("SCuadradoInput");
+    var Lado = parseInt(document.getElementById("Valor_LCuadrado").value);
+    var superficie = Lado*Lado;
+    superCuad.value = superficie;
+}
