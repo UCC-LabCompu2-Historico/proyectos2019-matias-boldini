@@ -49,3 +49,11 @@ function volEsf(){
     var volumen = (4*Math.PI*(radio*radio*radio))/3;
     volEsf.value = volumen;
 }
+
+function volCono(){
+    var volCono = document.getElementById("SConoInput");
+    var radio = parseInt(document.getElementById("Valor_RCono").value);
+    var altura = parseInt(document.getElementById("Valor_ACono").value);
+    var volumen = (Math.PI*(radio*radio)*altura)/3;
+    volCono.value = volumen;
+}
