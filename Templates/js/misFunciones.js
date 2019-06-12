@@ -35,3 +35,10 @@ function volCil(){
     var volumen = Math.PI*(radio*radio)*altura;
     volCil.value = volumen;
 }
+
+function volCubo(){
+    var volCubo = document.getElementById("SCuboInput");
+    var arista = parseInt(document.getElementById("Valor_ACubo").value);
+    var volumen = (arista*arista*arista);
+    volCubo.value = volumen;
+}
