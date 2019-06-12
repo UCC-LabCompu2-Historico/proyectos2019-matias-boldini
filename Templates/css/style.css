@@ -31,6 +31,13 @@ img{
     margin: auto;
     display: block;
 }
+
+#imgCir{
+    width: 35%;
+    height: 35%; 
+    align-items: center;
+}
+
 main {
     flex: 1 0 auto;
   }
