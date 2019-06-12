@@ -27,3 +27,11 @@ function supCirc(){
     var superficie = (radio*radio)*Math.PI;
     superCirc.value = superficie;
 }
+
+function volCil(){
+    var volCil = document.getElementById("SCilindroInput");
+    var radio = parseInt(document.getElementById("Valor_RCilindro").value);
+    var altura = parseInt(document.getElementById("Valor_ACilindro").value);
+    var volumen = Math.PI*(radio*radio)*altura;
+    volCil.value = volumen;
+}
