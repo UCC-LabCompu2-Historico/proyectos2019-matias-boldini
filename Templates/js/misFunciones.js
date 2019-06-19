@@ -57,3 +57,32 @@ function volCono(){
     var volumen = (Math.PI*(radio*radio)*altura)/3;
     volCono.value = volumen;
 }
+
+function dibujarCuad(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var lado = parseInt(document.getElementById("Valor_LCuadrado").value);
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillstyle = "#d3d3d3";
+    ctx.beginPath();
+    ctx.rect(125,50, lado, lado);
+    ctx.fill();
+    ctx.closePath();
+}
+
+function dibujarRect(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var base = parseInt(document.getElementById("Valor_BRectangulo").value);
+    var altura = parseInt(document.getElementById("Valor_ARectangulo").value);
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillstyle = "#d3d3d3";
+    ctx.beginPath();
+    ctx.rect(125,50, base, altura);
+    ctx.fill();
+    ctx.closePath();
+}
