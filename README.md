@@ -20,7 +20,7 @@ En algunos menus tiene incorporado botones para volver de a un paso y no tener q
 
 ## Estado actual de desarrollo
 
-En este momento la pagina cuenta con su funcionalidad total para calcular tanto las superficies como los volumenes ya ingresados, todavia le falta el graficarlas en el canvas.
+En este momento la pagina cuenta con su funcionalidad total para calcular tanto las superficies como los volumenes ya ingresados, grafica cuadrados, rectangulos y circulos en el canvas, todavia no se logro poder hacer andar a los triangulos o los volumenes.
 
 
 ## Sugerencias a mejorar
