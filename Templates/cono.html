@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/misFunciones.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title> Calculadora de Superficies</title>
+    <title> Calculadora SupVol</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script type="text/javascript" src="js/misFunciones.js"></script>
@@ -19,51 +18,51 @@
 <body>
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container">
-                <a href="superficie.html" class="brand-logo left"><i class="material-icons">arrow_back</i></a>
+            <a href="volumenes.html" class="brand-logo left"><i class="material-icons">arrow_back</i></a>
             <a id="logo-container" href="index.html" class="brand-logo center"><i class="material-icons">home</i>Inicio</a>
         </div>
     </nav>
     <section>
         <header>
-            <h1 id="mainTitulo">RECTANGULO</h1>
+            <h1 id="mainTitulo">CONO</h1>
         </header>
         <div>
-            <h5 class="header center black-text">Formula: Base.Altura</h5>
+            <h5 class="header center black-text">Formula: π.Radio².Altura/3</h5>
         </div>
         <div class="row center">
-            <a href="trectangulo.html" class="waves-effect waves-teal btn-flat"> Teoria en Profundidad</a>
+            <a href="tcono.html" class="waves-effect waves-teal btn-flat"> Teoria en Profundidad</a>
         </div>
     </section>
     <section>
-            <div class="row center">
-                <div class="input-field inline">
-                    <input id="Valor_BRectangulo" type="number" class="validate">
-                    <label>Base</label>
-                    Unidad en Metros
-                </div>
-                <div class="input-field inline">
-                    <input id="Valor_ARectangulo" type="number" class="validate">
-                    <label>Altura</label>
-                    Unidad en Metros
-                </div>
-            </div>         
+        <div class="row center">
+            <div class="input-field inline">
+                <input id="Valor_RCono" type="number" class="validate">
+                <label>Radio</label>
+                Unidad en Metros
+            </div>
+            <div class="input-field inline">
+                <input id="Valor_ACono" type="number" class="validate">
+                <label>Altura</label>
+                Unidad en Metros
+            </div>
+        </div>         
     </section>
     <section>
         <div class="row center">
-            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="supRect();dibujarRect()">Calcular
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="volCono()">Calcular
                 <i class="material-icons right">send</i>
             </button>
         </div>
         <div>
-            <h5 id="titSup">Superficie del Rectangulo</h5>
+            <h5 id="titSup">Volumen del Cono</h5>
         </div>
         <div class="row center">
             Resultado=
-        <div id="SRectangulo" class="input-field inline">
-            <input id="SRectanguloInput" class="validate"> Metros Cuadrados
+        <div id="SCono" class="input-field inline">
+            <input id="SConoInput" class="validate"> Metros Cubicos
         </div>
         <div>
-            <h6>Grafico del Rectangulo</h6>
+            <h6>Grafico del Cono</h6>
         </div>
         <canvas id="myCanvas">
         </canvas>

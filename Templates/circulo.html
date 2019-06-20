@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="imagenes/iconpage.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
@@ -13,36 +13,38 @@
     <title> Calculadora de Superficies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
 </head>
 <body>
     <nav class="light-blue lighten-1" role="navigation">
         <div class="nav-wrapper container">
+            <a href="superficie.html" class="brand-logo left"><i class="material-icons">arrow_back</i></a>
             <a id="logo-container" href="index.html" class="brand-logo center"><i class="material-icons">home</i>Inicio</a>
         </div>
     </nav>
     <section>
-    <header>
-            <h1 id="mainTitulo">Circulo</h1>
+        <header>
+            <h1 id="mainTitulo">CIRCULO</h1>
         </header>
-    <div>
-        <h5 class="header center black-text">Formula: Radio².π</h5>
-    </div>
-    <div class="row center">
-        <a href="tcirculo.html" class="waves-effect waves-teal btn-flat"> Teoria en Profundidad</a>
-    </div>
+        <div>
+            <h5 class="header center black-text">Formula: Radio².π</h5>
+        </div>
+        <div class="row center">
+            <a href="tcirculo.html" class="waves-effect waves-teal btn-flat"> Teoria en Profundidad</a>
+        </div>
     </section>
     <section>
         <div class="row center">
             <div class="input-field inline">
-                <input id="Valr_L" type="number" class="validate">
+                <input id="Valor_RCirculo" type="number" class="validate">
                 <label>Radio</label>
                 Unidad en Metros
+            </div>
         </div>    
     </section>
     <section>
         <div class="row center">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+            <button class="btn waves-effect waves-light" type="submit" name="action" onclick="supCirc();dibujarCirc()">Calcular
                 <i class="material-icons right">send</i>
             </button>
         </div>
@@ -55,28 +57,28 @@
             <input id="SCirculoInput" class="validate"> Metros Cuadrados
         </div>
         <div>
-            <h6>Grafico del Triangulo</h6>
+            <h6>Grafico del Circulo</h6>
         </div>
         <canvas id="myCanvas">
         </canvas>
         </div>
     </section>
     <footer class="page-footer orange">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <p class="grey-text text-lighten-4">Proyecto de Laboratorio de Computacion II de Matias Boldini</p>
-              <p><a class="white-text" href="https://github.com/MatiasBoldini">MatÍas Boldini</a></p>
+        <div id="divGen" class="container">
+            <div id="divGen" class="row">
+                <div id="divGen" class="col l6 s12">
+                <p class="grey-text text-lighten-4">Proyecto de Laboratorio de Computacion II de Matias Boldini</p>
+                <p><a class="white-text" href="https://github.com/MatiasBoldini">MatÍas Boldini</a></p>
+                </div>
+                <div id="divGen" class="col l3 s12">
+                <h5 id="titFooter">Profesores</h5>
+                <ul>
+                    <li><a class="white-text" href="https://github.com/edme88">Agustina Edmé Aliciardi</a></li>
+                    <li><a class="white-text" href="https://github.com/rmarku">Martín Ricardo Marcucci</a></li>
+                </ul>
+                </div>
             </div>
-            <div class="col l3 s12">
-              <h5 id="titFooter">Profesores</h5>
-              <ul>
-                <li><a class="white-text" href="https://github.com/edme88">Agustina Edmé Aliciardi</a></li>
-                <li><a class="white-text" href="https://github.com/rmarku">Martín Ricardo Marcucci</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </footer>
+    </footer>
 </body>
 </html>

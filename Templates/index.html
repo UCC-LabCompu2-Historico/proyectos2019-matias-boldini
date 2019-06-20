@@ -4,16 +4,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="imagenes/iconpage.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <title> Calculadora de Superficies</title>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <title> Calculadora de SupVol</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="misFunciones.js"></script>
 </head>
 <body>
     <nav class="light-blue lighten-1" role="navigation">
@@ -21,37 +21,69 @@
             <a id="logo-container" href="index.html" class="brand-logo center"><i class="material-icons">home</i>Inicio</a>
         </div>
     </nav>
-    <header>
-        <h1 id="mainTitulo">Calculo de Superficies</h1>
-    </header>
     <section>
-    <div class="container">
-        <div class="row center">
-            <a href="triangulo.html" class="btn-large waves-effect waves-light orange">Triangulo</a>
-            <a href="cuadrado.html" class="btn-large waves-effect waves-light orange">Cuadrado</a>
-        </div>
-        <div class="row center">
-            <a href="circulo.html" class="btn-large waves-effect waves-light orange">Circulo</a>
-            <a href="rectangulo.html" class="btn-large waves-effect waves-light orange">Rectangulo</a>
-        </div>
-    </div>
-    </section>
-<footer class="page-footer orange">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <p class="grey-text text-lighten-4">Proyecto de Laboratorio de Computacion II de Matias Boldini</p>
-              <p><a class="white-text" href="https://github.com/MatiasBoldini">MatÍas Boldini</a></p>
+        <div class="container center valign-wrapper">
+            <div class="row">
+            <div class="col s12 white-text">
+                <h1 id="mainTitulo">Calculadora de Superficies y Volumenes</h1>
+                <a href="superficie.html" class="waves-effect waves-light btn-large teal lighten-2">Superficies</a>
+                <a href="volumenes.html" class="waves-effect waves-light btn-large teal lighten-2">Volúmenes</a>
             </div>
-            <div class="col l3 s12">
-              <h5 id="titFooter">Profesores</h5>
-              <ul>
-                <li><a class="white-text" href="https://github.com/edme88">Agustina Edmé Aliciardi</a></li>
-                <li><a class="white-text" href="https://github.com/rmarku">Martín Ricardo Marcucci</a></li>
-              </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+                <h5 class="center">Optimizado para uso</h5>
+                <p class="light">El programa esta optimizado sin ser muy cargado, para que
+                    no ande trabado o tarde mucho en cargar, de esta manera rapido y eficaz 
+                    para ser utilizado.
+                </p>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+                <h5 class="center">¿Para que sirve esta aplicacion Web?</h5>
+                <p class="light">Esta aplicacion en web consiste en brindar una solucion rapida para realizar calculos rapidos de:
+                </p>
+                <ul class="browser-default">
+                    <li>La superficie de distintas figuras geometricas.</li>
+                    <li>El volumen de distintas figuras geometricas.</li>
+                </ul>
+                <p class="light">Ademas brinda una breve teoria de cada figura para entender mejor el calculo que se esta haciendo.</p>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+                <h5 class="center">Sencillo de Usar</h5>
+                <p class="light">Se puso mucho enfasis en la experiencia de Usuario
+                    para que sea lo mas facil y dinamico de utilizar.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+    </section>
+    <footer class="page-footer orange">
+            <div id="divGen" class="container">
+            <div id="divGen" class="row">
+                <div id="divGen" class="col l6 s12">
+                <p class="grey-text text-lighten-4">Proyecto de Laboratorio de Computacion II de Matias Boldini</p>
+                <p><a class="white-text" href="https://github.com/MatiasBoldini">MatÍas Boldini</a></p>
+                </div>
+                <div id="divGen" class="col l3 s12">
+                <h5 id="titFooter">Profesores</h5>
+                <ul>
+                    <li><a class="white-text" href="https://github.com/edme88">Agustina Edmé Aliciardi</a></li>
+                    <li><a class="white-text" href="https://github.com/rmarku">Martín Ricardo Marcucci</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+    </footer>
 </body>
 </html>
