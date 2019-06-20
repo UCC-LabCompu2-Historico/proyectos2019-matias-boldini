@@ -86,3 +86,24 @@ function dibujarRect(){
     ctx.fill();
     ctx.closePath();
 }
+
+function dibujarCirc(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var radio = parseInt(document.getElementById("Valor_RCirculo").value);
+
+    ctx.fillstyle = "#d3d3d3";
+    ctx.beginPath();
+    ctx.arc(125, 70, radio, 0, 2*Math.PI);
+    ctx.fill();
+    ctx.closePath();
+}
+
+function dibujarTri(){
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var base = parseInt(document.getElementById("").value);
+    var altura = parseInt(document.getElementById("").value);
+
+
+}
