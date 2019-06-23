@@ -92,6 +92,8 @@ function dibujarCirc(){
     var ctx = canvas.getContext("2d");
     var radio = parseInt(document.getElementById("Valor_RCirculo").value);
 
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
     ctx.fillstyle = "#d3d3d3";
     ctx.beginPath();
     ctx.arc(125, 70, radio, 0, 2*Math.PI);
