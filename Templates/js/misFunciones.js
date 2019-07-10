@@ -192,7 +192,7 @@ function animar(){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
       
         ctx.beginPath();
-        var radio = (parseInt(document.getElementById("Valor_RCirculo").value))*Math.abs(Math.cos(angle));
+        var radio = (parseInt(document.getElementById("Valor_RCirculo").value))*Math.abs(Math.cos(angulo));
         ctx.arc(150, 75, radio, 0, Math.PI * 2, false);
         ctx.closePath();
         
